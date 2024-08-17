@@ -4,7 +4,7 @@
   "description": "This is Created as to initialize the standard practice which is being used in the tech Industry to write Backend Code.",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "Balhara",
