@@ -10,6 +10,13 @@ const asyncHandler = (requestHandler) =>async (req,res,next)=>{
     }
 };
 
+
+// // Promise Method..
+// const asyncHandler = (requsetHandler) => (req, res, next) => {
+//   Promise.resolve(requsetHandler(req, res, next)).catch((err) => next(err));
+// };
+
+
 module.exports = { asyncHandler };
 
 // There are two method for making this asyncHandler function..
@@ -24,8 +31,3 @@ module.exports = { asyncHandler };
 // const asyncHandler = (funct) =>()=>{};
 // // if want  to make this function as async function..
 // const asyncHandler = (funct) =>async(req,res,next)=>{};
-
-// // Promise Method..
-// const asyncHandler = (requsetHandler) => (req, res, next) => {
-//   Promise.resolve(requsetHandler(req, res, next)).catch((err) => next(err));
-// };
